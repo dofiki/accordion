@@ -1,0 +1,90 @@
+*{
+    font-family: 'Domine', serif;
+}
+
+body{
+background-color: #5C8984;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+.fc{
+color: #7c0101;
+
+
+}
+
+.accordion{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.cntbx{
+    margin-top: 1rem;
+    width: 30rem;
+    
+    
+}
+
+.label{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+   
+}
+
+.labeltxt{
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.icon{
+    margin-right: 0.5rem;
+    transition: 0.4s;
+    cursor: default;
+}
+
+.icon.rotation{
+    transform: rotate(45deg);
+}
+
+.cnt{
+    background-color:rgb(30, 81, 29);
+    height:3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: none;
+    border-radius: 12px;
+    color: white;
+    padding-left: 1rem;
+    
+}
+
+.cnt.active{
+    display: grid;
+    transition: transform 0.5s;
+}
+
+@media (max-width:530px){
+    
+    .cntbx{
+       width: 18rem;
+    }
+
+    .labeltxt{
+        font-size: 1rem;
+    }
+    
+}
